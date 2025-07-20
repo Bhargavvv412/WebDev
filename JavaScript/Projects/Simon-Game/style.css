@@ -1,7 +1,33 @@
 .container {
     display: grid;
     position: relative;
-    display: grid;
-    grid-template-columns: ;
+    row-gap: 30px;
+    column-gap: 30px;
+    grid-template-columns: 1fr 1fr;
     padding: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+.btn {
+    width: 150px;
+    height: 150px;
+}
+
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
 }
