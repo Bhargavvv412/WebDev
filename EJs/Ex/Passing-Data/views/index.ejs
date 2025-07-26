@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Letter Counter</title>
+</head>
+
+<body>
+    <% if(locals.numberOfLatters){ %>
+        <h1>
+            <%=numberOfLatters%>Latter is in your name
+        </h1>
+        <%} else { %>
+            <h1>Count Your Name Letters</h1>
+            <%}%>
+
+                <form action="/submit" method="POST">
+                    <input type="text" name="fname" placeholder="First Name" required>
+                    <input type="text" name="lname" placeholder="Last Name" required>
+                    <button type="submit">Submit</button>
+                </form>
+</body>
+
+</html>
