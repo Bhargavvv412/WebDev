@@ -9,6 +9,10 @@ function App() {
     document.getElementById("root").style.textDecoration = "line-through";
   }
 
+  function unStike() {
+    document.getElementById("root").style.textDecoration = null;
+  }
+
   var isDone = true;
 
   const strikeThrough = { textDecoration: "line-through" };
@@ -20,6 +24,7 @@ function App() {
       {/* Impertaive programming */}
       <h1>Impertavie programming</h1>
       <button onClick={strike}>Change to strike</button>
+      <button onClick={unStike} > Unstrik e</button>
 
     </>
   )
